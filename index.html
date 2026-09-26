@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Distribuidora del Oriente - Venta de carne de res, pechuga de pollo y pierna de cerdo. Calidad y frescura garantizada." />
+  <title>Distribuidora del Oriente | Carnes de Calidad</title>
+
+  <!-- Google Fonts: Montserrat (títulos) y Open Sans (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <span class="logo__icon">🥩</span>
+        <span class="logo__text">Distribuidora <strong>del Oriente</strong></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#productos" class="nav__link">Productos</a></li>
+          <li><a href="#cocina" class="nav__link">Tips de Cocina</a></li>
+          <li><a href="#nutricion" class="nav__link">Nutrición</a></li>
+          <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+          <li><a href="#encuesta" class="nav__link">Encuesta</a></li>
+          <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón hamburguesa (solo móvil) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="inicio">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__tagline">Calidad · Frescura · Confianza</p>
+      <h1 class="hero__title">Los mejores cortes de carne, directo a tu mesa</h1>
+      <p class="hero__subtitle">
+        Carne de res, pechuga de pollo y pierna de cerdo seleccionadas con los más altos estándares de higiene y sabor.
+      </p>
+      <div class="hero__actions">
+        <a href="#productos" class="btn btn--primary">Ver Productos</a>
+        <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20hacer%20un%20pedido"
+           target="_blank" rel="noopener" class="btn btn--ghost">Realiza tu pedido</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCTOS ================= -->
+  <section class="section" id="productos">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__eyebrow">Nuestros Productos</span>
+        <h2 class="section__title">Cortes frescos y de primera calidad</h2>
+        <p class="section__desc">Seleccionamos cada pieza para garantizar sabor, textura y frescura en cada pedido.</p>
+      </header>
+
+      <div class="grid grid--3">
+        <!-- Producto 1 -->
+        <article class="card reveal">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=800&q=80" alt="Carne de res fresca" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Carne de Res</h3>
+            <p class="card__text">Cortes premium: lomo, falda, costilla y molida. Ideal para asados, guisos y parrillas.</p>
+            <span class="card__price">Consultar precio</span>
+          </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="card reveal">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=800&q=80" alt="Pechuga de pollo fresca" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Pechuga de Pollo</h3>
+            <p class="card__text">Pechuga sin hueso, jugosa y limpia. Perfecta para dietas saludables y comidas rápidas.</p>
+            <span class="card__price">Consultar precio</span>
+          </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="card reveal">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=800&q=80" alt="Pierna de cerdo fresca" loading="lazy" />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Pierna de Cerdo</h3>
+            <p class="card__text">Carne suave y jugosa, ideal para hornear, adobar o preparar en tacos y pozole.</p>
+            <span class="card__price">Consultar precio</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TIPS DE COCINA ================= -->
+  <section class="section section--alt" id="cocina">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__eyebrow">Tips de Cocina</span>
+        <h2 class="section__title">Consejos para preparar cada corte</h2>
+        <p class="section__desc">Aprovecha al máximo el sabor y la textura de nuestras carnes.</p>
+      </header>
+
+      <div class="grid grid--3">
+        <article class="tip reveal">
+          <div class="tip__icon">🔥</div>
+          <h3 class="tip__title">Carne de Res</h3>
+          <ul class="tip__list">
+            <li>Deja reposar a temperatura ambiente 20 min antes de cocinar.</li>
+            <li>Sella a fuego alto para conservar los jugos.</li>
+            <li>Deja reposar 5 min tras cocinar antes de cortar.</li>
+          </ul>
+        </article>
+
+        <article class="tip reveal">
+          <div class="tip__icon">🍗</div>
+          <h3 class="tip__title">Pechuga de Pollo</h3>
+          <ul class="tip__list">
+            <li>Marina al menos 30 min con limón y especias.</li>
+            <li>Cocina a fuego medio para evitar que se seque.</li>
+            <li>Verifica que no quede rosada en el centro.</li>
+          </ul>
+        </article>
+
+        <article class="tip reveal">
+          <div class="tip__icon">🐖</div>
+          <h3 class="tip__title">Pierna de Cerdo</h3>
+          <ul class="tip__list">
+            <li>Adoba con ajo, comino y naranja agria.</li>
+            <li>Hornea tapada para mantener la humedad.</li>
+            <li>Baña con sus jugos cada 30 minutos.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TIPS DE NUTRICIÓN ================= -->
+  <section class="section" id="nutricion">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__eyebrow">Tips de Nutrición</span>
+        <h2 class="section__title">Beneficios para tu salud</h2>
+        <p class="section__desc">Conoce el aporte nutricional de cada tipo de carne y las porciones recomendadas.</p>
+      </header>
+
+      <div class="grid grid--3">
+        <article class="nutri reveal">
+          <h3 class="nutri__title">Carne de Res</h3>
+          <p class="nutri__text">Rica en hierro, zinc y proteína de alto valor biológico. Fortalece músculos y sistema inmune.</p>
+          <p class="nutri__portion"><strong>Porción sugerida:</strong> 150 g</p>
+        </article>
+
+        <article class="nutri reveal">
+          <h3 class="nutri__title">Pechuga de Pollo</h3>
+          <p class="nutri__text">Baja en grasa y alta en proteína. Ideal para dietas de control de peso y deportistas.</p>
+          <p class="nutri__portion"><strong>Porción sugerida:</strong> 120 g</p>
+        </article>
+
+        <article class="nutri reveal">
+          <h3 class="nutri__title">Pierna de Cerdo</h3>
+          <p class="nutri__text">Fuente de vitamina B1, B6 y minerales como fósforo y potasio. Aporta energía y saciedad.</p>
+          <p class="nutri__portion"><strong>Porción sugerida:</strong> 130 g</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIOS ================= -->
+  <section class="section section--alt" id="testimonios">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__eyebrow">Testimonios</span>
+        <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+      </header>
+
+      <div class="carousel" id="carousel">
+        <button class="carousel__btn carousel__btn--prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
+
+        <div class="carousel__track" id="carouselTrack">
+          <article class="testimonial">
+            <img class="testimonial__avatar" src="https://i.pravatar.cc/100?img=12" alt="Foto de cliente" />
+            <p class="testimonial__text">"La carne siempre llega fresca y en excelente estado. Es mi proveedor de confianza desde hace 3 años."</p>
+            <h4 class="testimonial__name">Carlos Méndez</h4>
+            <span class="testimonial__role">Cliente frecuente</span>
+          </article>
+
+          <article class="testimonial">
+            <img class="testimonial__avatar" src="https://i.pravatar.cc/100?img=45" alt="Foto de cliente" />
+            <p class="testimonial__text">"El pollo es muy limpio y bien empacado. Se nota la calidad desde el primer momento."</p>
+            <h4 class="testimonial__name">María Fernández</h4>
+            <span class="testimonial__role">Restaurante La Sazón</span>
+          </article>
+
+          <article class="testimonial">
+            <img class="testimonial__avatar" src="https://i.pravatar.cc/100?img=32" alt="Foto de cliente" />
+            <p class="testimonial__text">"Atención rápida por WhatsApp y entrega puntual. 100% recomendados para negocios."</p>
+            <h4 class="testimonial__name">Jorge Ramírez</h4>
+            <span class="testimonial__role">Distribuidor</span>
+          </article>
+
+          <article class="testimonial">
+            <img class="testimonial__avatar" src="https://i.pravatar.cc/100?img=20" alt="Foto de cliente" />
+            <p class="testimonial__text">"La pierna de cerdo es espectacular, muy jugosa. Mis clientes siempre quedan satisfechos."</p>
+            <h4 class="testimonial__name">Ana Torres</h4>
+            <span class="testimonial__role">Cocina económica</span>
+          </article>
+        </div>
+
+        <button class="carousel__btn carousel__btn--next" id="nextBtn" aria-label="Siguiente">&#10095;</button>
+
+        <!-- Indicadores -->
+        <div class="carousel__dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ENCUESTA ================= -->
+  <section class="section" id="encuesta">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__eyebrow">Encuesta</span>
+        <h2 class="section__title">Tu opinión nos ayuda a mejorar</h2>
+      </header>
+
+      <form class="survey" id="surveyForm" novalidate>
+        <div class="survey__field">
+          <label for="nombre">Nombre (opcional)</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+        </div>
+
+        <div class="survey__field">
+          <label for="carne">¿Qué carne consumes más? *</label>
+          <select id="carne" name="carne" required>
+            <option value="">-- Selecciona una opción --</option>
+            <option value="res">Carne de res</option>
+            <option value="pollo">Pechuga de pollo</option>
+            <option value="cerdo">Pierna de cerdo</option>
+            <option value="todas">Todas las anteriores</option>
+          </select>
+        </div>
+
+        <div class="survey__field">
+          <label for="calificacion">¿Cómo calificas nuestro servicio? *</label>
+          <div class="rating" id="rating">
+            <input type="radio" id="star5" name="calificacion" value="5" required /><label for="star5">★</label>
+            <input type="radio" id="star4" name="calificacion" value="4" /><label for="star4">★</label>
+            <input type="radio" id="star3" name="calificacion" value="3" /><label for="star3">★</label>
+            <input type="radio" id="star2" name="calificacion" value="2" /><label for="star2">★</label>
+            <input type="radio" id="star1" name="calificacion" value="1" /><label for="star1">★</label>
+          </div>
+        </div>
+
+        <div class="survey__field">
+          <label for="comentario">Comentario adicional</label>
+          <textarea id="comentario" name="comentario" rows="4" placeholder="Cuéntanos tu experiencia..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary">Enviar encuesta</button>
+
+        <p class="survey__message" id="surveyMessage" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTO ================= -->
+  <section class="section section--alt" id="contacto">
+    <div class="container">
+      <header class="section__header">
+        <span class="section__eyebrow">Contacto</span>
+        <h2 class="section__title">Estamos para servirte</h2>
+      </header>
+
+      <div class="contact">
+        <div class="contact__info">
+          <p><strong>📍 Dirección:</strong> Av. Principal #123, Col. Centro, Oriente</p>
+          <p><strong>📞 Teléfono:</strong> +52 123 456 7890</p>
+          <p><strong>✉️ Correo:</strong> ventas@distribuidoradeloriente.com</p>
+          <p><strong>🕒 Horario:</strong> Lun a Sáb · 7:00 am – 7:00 pm</p>
+
+          <div class="contact__social">
+            <a href="https://wa.me/521234567890" target="_blank" rel="noopener" class="social-btn social-btn--wa">WhatsApp</a>
+            <a href="https://facebook.com/distribuidoradeloriente" target="_blank" rel="noopener" class="social-btn social-btn--fb">Facebook</a>
+          </div>
+        </div>
+
+        <!-- Mapa embebido (puedes cambiar el src por tu ubicación real) -->
+        <div class="contact__map">
+          <iframe
+            title="Ubicación Distribuidora del Oriente"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-99.2%2C19.3%2C-99.0%2C19.5&layer=mapnik"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Distribuidora <strong>del Oriente</strong></p>
+      <p class="footer__copy">&copy; <span id="year"></span> Distribuidora del Oriente. Todos los derechos reservados.</p>
+      <p class="footer__legal"><a href="#">Aviso legal</a> · <a href="#">Política de privacidad</a></p>
+    </div>
+  </footer>
+
+  <!-- ================= BOTÓN FLOTANTE WHATSAPP ================= -->
+  <a href="https://wa.me/521234567890?text=Hola%2C%20quiero%20más%20información"
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <!-- Ícono SVG de WhatsApp -->
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M16 3C9.4 3 4 8.4 4 15c0 2.3.7 4.5 1.9 6.3L4 29l7.9-1.9c1.7.9 3.6 1.4 5.6 1.4h.5C24.6 28.5 28 23.1 28 15.5 28 8.4 22.6 3 16 3zm0 22.5c-1.7 0-3.4-.4-4.8-1.3l-.3-.2-4.7 1.1 1.2-4.5-.2-.3c-1-1.5-1.6-3.3-1.6-5.3 0-5.5 4.5-10 10-10s10 4.5 10 10-4.1 10.5-9.6 10.5zM22.4 18.7c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2s-.8 1-1 1.2c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1 2.8 1.2 3c.2.2 2 3 4.8 4.2.7.3 1.2.4 1.6.5.7.1 1.3.1 1.8 0 .5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/>
+    </svg>
+  </a>
+
+  <!-- Archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
